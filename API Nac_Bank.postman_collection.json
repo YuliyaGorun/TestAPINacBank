@@ -1,0 +1,186 @@
+{
+	"info": {
+		"_postman_id": "640ad252-31dd-40e8-a658-9be28a0772ea",
+		"name": "API Nac_Bank",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "PositiveRequest",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.nbrb.by/api/exrates/currencies/1",
+					"protocol": "https",
+					"host": [
+						"www",
+						"nbrb",
+						"by"
+					],
+					"path": [
+						"api",
+						"exrates",
+						"currencies",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "NegativeRequest",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.nbrb.by/api/exrates/currencies/8888",
+					"protocol": "https",
+					"host": [
+						"www",
+						"nbrb",
+						"by"
+					],
+					"path": [
+						"api",
+						"exrates",
+						"currencies",
+						"8888"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AllCurrency",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.nbrb.by/api/exrates/currencies",
+					"protocol": "https",
+					"host": [
+						"www",
+						"nbrb",
+						"by"
+					],
+					"path": [
+						"api",
+						"exrates",
+						"currencies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BelgianFrancCourse",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.nbrb.by/api/exrates/currencies/12",
+					"protocol": "https",
+					"host": [
+						"www",
+						"nbrb",
+						"by"
+					],
+					"path": [
+						"api",
+						"exrates",
+						"currencies",
+						"12"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BelarusianRubleToRussianRuble",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.nbrb.by/api/exrates/rates/298?ondate=2018-12-3",
+					"protocol": "https",
+					"host": [
+						"www",
+						"nbrb",
+						"by"
+					],
+					"path": [
+						"api",
+						"exrates",
+						"rates",
+						"298"
+					],
+					"query": [
+						{
+							"key": "ondate",
+							"value": "2018-12-3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DynamicsOfTheBelarusianRuble",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.nbrb.by/API/ExRates/Rates/Dynamics/298?startDate=2018-12-1&endDate=2019-2-10",
+					"protocol": "https",
+					"host": [
+						"www",
+						"nbrb",
+						"by"
+					],
+					"path": [
+						"API",
+						"ExRates",
+						"Rates",
+						"Dynamics",
+						"298"
+					],
+					"query": [
+						{
+							"key": "startDate",
+							"value": "2018-12-1"
+						},
+						{
+							"key": "endDate",
+							"value": "2019-2-10"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "2707d594-5446-4f72-9fed-9b4808faa07a",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "b1d610e4-eadf-486f-8f05-bae5f61bcf10",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
